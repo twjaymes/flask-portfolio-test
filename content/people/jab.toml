@@ -1,0 +1,9 @@
+name = "Joshua Bronson"
+nickname = "jab"
+location = "New York"
+tags = ["core", "flask", "werkzeug"]
+alumni = true
+
+[links]
+GitHub = "https://github.com/jab"
+Twitter = "https://github.com/jabronso"

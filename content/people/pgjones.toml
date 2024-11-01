@@ -1,0 +1,9 @@
+name = "Phil Jones"
+nickname = "pgjones"
+tags = ["core", "quart", "flask", "werkzeug"]
+
+[links]
+GitHub = "pgjones"
+Website = "https://pgjones.dev/"
+Mastodon = "https://fosstodon.org/@pgjones"
+Twitter = "https://twitter.com/pdgjones"

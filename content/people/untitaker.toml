@@ -1,0 +1,11 @@
+name = "Markus Unterwaditzer"
+nickname = "untitaker"
+pronouns = "he/they"
+location = "Austria"
+tags = ["core", "flask", "click"]
+alumni = true
+
+[links]
+GitHub = "https://github.com/untitaker"
+Mastodon = "https://woodland.cafe/@untitaker"
+Twitter = "https://twitter.com/untitaker"

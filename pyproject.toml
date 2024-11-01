@@ -1,0 +1,70 @@
+[project]
+name = "portfolio-pallets-test"
+version = "1.0.0"
+description = "Testing the setup for my portfolio website"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+authors = [{name = "Taylor", email = "tj4653a@gmail.com"}]
+classifiers = ["Private :: Do Not Upload"]
+requires-python = "~=3.12.0"
+dependencies = [
+    "beautifulsoup4",
+    "feedgen",
+    "flask",
+    "flask-sqlalchemy-lite",
+    "gunicorn",
+    "lxml",
+    "markdown-it-py",
+    "pygments",
+]
+
+[project.urls]
+Home = "https://palletsprojects.com"
+Source = "https://github.com/pallets/pallets-web/"
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "pallets"
+
+[tool.mypy]
+files = ["src/pallets"]
+show_error_codes = true
+pretty = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "feedgen.*",
+]
+ignore_missing_imports = true
+
+[tool.pyright]
+include = ["src/pallets"]
+
+[tool.ruff]
+src = ["src"]
+fix = true
+unsafe-fixes = true
+show-fixes = true
+output-format = "full"
+
+[tool.ruff.lint]
+select = [
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle error
+    "F",  # pyflakes
+    "I",  # isort
+    "UP",  # pyupgrade
+    "W",  # pycodestyle warning
+]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+order-by-type = false
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^21.9b0"
